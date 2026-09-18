@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | ApexPlanet</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <script src="js/contact.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">AP</span>
+          <span>ApexPlanet</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="todo.html">To-Do</a>
+          <a href="products.html">Product Listing</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Let’s connect</p>
+          <h1>Contact</h1>
+          <p>Looking for a developer who values clarity, design, and usability? Send a message and let’s talk.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-wrap">
+          <aside class="contact-info">
+            <h2>Contact details</h2>
+            <p>Open to freelance work, collaborations, and exciting frontend opportunities.</p>
+            <ul class="contact-list">
+              <li>📍 Bangalore, India</li>
+              <li>✉️ hello@aishapatel.dev</li>
+              <li>📞 +91 98765 43210</li>
+            </ul>
+          </aside>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project inquiry" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div id="contactMessage" class="form-message" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <p>© 2026 Aisha Patel</p>
+        <p>Contact</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Listing | ApexPlanet</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <script src="js/products.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">AP</span>
+          <span>ApexPlanet</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="todo.html">To-Do</a>
+          <a href="products.html">Product Listing</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Shop the collection</p>
+          <h1>Product Listing</h1>
+          <p>Filter by category, set your budget range, and sort the catalog instantly.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="filter-panel">
+            <div class="product-controls">
+              <div class="form-group">
+                <label for="categoryFilter">Category</label>
+                <select id="categoryFilter" aria-label="Filter products by category">
+                  <option value="All">All</option>
+                  <option value="Electronics">Electronics</option>
+                  <option value="Clothing">Clothing</option>
+                  <option value="Books">Books</option>
+                  <option value="Accessories">Accessories</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="priceFilter">Price</label>
+                <select id="priceFilter" aria-label="Filter products by price">
+                  <option value="all">All Prices</option>
+                  <option value="under-500">Under ₹500</option>
+                  <option value="500-1000">₹500 – ₹1000</option>
+                  <option value="1000-2000">₹1000 – ₹2000</option>
+                  <option value="above-2000">Above ₹2000</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="sortSelect">Sort By</label>
+                <select id="sortSelect" aria-label="Sort products">
+                  <option value="featured">Featured</option>
+                  <option value="price-low-high">Price: Low → High</option>
+                  <option value="price-high-low">Price: High → Low</option>
+                  <option value="rating-high-low">Rating: High → Low</option>
+                  <option value="name-a-z">Name: A → Z</option>
+                  <option value="name-z-a">Name: Z → A</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <p id="visibleCount" class="visible-count">Showing products</p>
+          <div id="productGrid" class="product-grid" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <p>© 2026 Aisha Patel</p>
+        <p>Product Listing</p>
+      </div>
+    </footer>
+  </body>
+</html>
